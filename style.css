@@ -90,3 +90,39 @@ footer {
   font-size: 14px;
   background: #e5e7eb;
 }
+/* ===== PREMIUM DEMO ADDITIONS ===== */
+
+.google-btn {
+  width: 100%;
+  background: #ffffff;
+  color: #000;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.mobile-btn {
+  width: 100%;
+  background: #16a34a;
+  color: white;
+}
+
+.wallet-box {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.ad-box {
+  border: 2px dashed #2563eb;
+  padding: 30px;
+  border-radius: 12px;
+  background: #f1f5f9;
+}
+
+.note {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
