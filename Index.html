@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earnify Hub | Earn from Day One</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Earnify Hub</h1>
+    <p class="tagline">Earn from Day One</p>
+    <button onclick="scrollToLogin()">Get Started</button>
+  </header>
+
+  <section class="info">
+    <p>
+      A demo platform to understand how task-based earning apps work.
+      This is a learning project only.
+    </p>
+  </section>
+
+  <!-- LOGIN SECTION -->
+  <section class="card" id="login">
+    <h2>Login / Signup (Demo)</h2>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <input type="email" id="email" placeholder="Enter your email" />
+    <button onclick="login()">Enter Dashboard</button>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section class="card hidden" id="dashboard">
+    <h2 id="welcome"></h2>
+    <p class="wallet">Demo Wallet Balance: ₹120</p>
+
+    <div class="buttons">
+      <button onclick="showTasks()">Tasks</button>
+      <button onclick="showWallet()">Wallet</button>
+      <button onclick="showAbout()">About</button>
+    </div>
+  </section>
+
+  <!-- TASKS -->
+  <section class="card hidden" id="tasks">
+    <h2>Demo Tasks</h2>
+
+    <p><strong>Task 1:</strong> Write a 2-line caption for a smartwatch</p>
+    <p><strong>Task 2:</strong> Write a short motivational quote</p>
+
+    <textarea placeholder="Write your response here..."></textarea>
+    <button onclick="submitTask()">Submit Task</button>
+  </section>
+
+  <!-- WALLET -->
+  <section class="card hidden" id="wallet">
+    <h2>Wallet</h2>
+    <p>Demo Balance: ₹120</p>
+    <button disabled>Withdraw</button>
+    <p class="note">Withdrawals are disabled in demo mode.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="card hidden" id="about">
+    <h2>About Earnify Hub</h2>
+    <p>
+      Earnify Hub is a demo / learning project created to understand
+      how task-based earning platforms work.
+      It does not provide real money or income.
+    </p>
+  </section>
+
+  <footer>
+    <p>⚠️ Demo / Learning Project • No real earnings</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
